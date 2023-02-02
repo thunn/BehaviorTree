@@ -1,5 +1,5 @@
 [package]
-name = "thunn/behavior_tree"
+name = "thunn/behavior-tree"
 version = "1.0.0"
 
 authors = ["Defaultio"]
