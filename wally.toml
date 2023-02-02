@@ -9,4 +9,4 @@ license = "Apache License 2.0"
 
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
-exclude = [ "foreman.toml", "wally.toml"]
+exclude = [ "foreman.toml"]
