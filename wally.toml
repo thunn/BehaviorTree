@@ -1,0 +1,11 @@
+[package]
+name = "thunn/behavior_tree"
+version = "1.0.0"
+
+authors = ["Defaultio"]
+description = "BehaviorTree is an implementation of the \"behavior tree\" paradigm for managing behavior. "
+
+license = "Apache License 2.0"
+
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "server"
