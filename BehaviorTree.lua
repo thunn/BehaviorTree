@@ -559,7 +559,7 @@ function TreeProto:run(obj,...)
 		local node = nodes[data.index]
 
 		-- Debug
-		if IsStudio then
+		if IsStudio and self.folder then
 			DebugEntityNode.Value = node.nodefolder
 		end		
 		--
@@ -743,5 +743,17 @@ BehaviorTree["External Task"] = function(params) return {type = "task", params =
 BehaviorTree.Tree = function(params) return {type = "tree", params = params} end
 BehaviorTree["Blackboard Query"] = function(params) return {type = "blackboard", params = params} end
 
+-- Enums
+BehaviorTree.Enum = {
+	SUCCESS = SUCCESS,
+	FAIL = FAIL,
+	RUNNING = RUNNING,
+	BLACKBOARD_QUERY_TYPE_TRUE = "true",
+	BLACKBOARD_QUERY_TYPE_FALSE = "false",
+	BLACKBOARD_QUERY_TYPE_NIL = "unset",
+	BLACKBOARD_QUERY_TYPE_NOTNIL = "set",
+}
+
+table.freeze(BehaviorTree.Enum)
 
 return BehaviorTree
