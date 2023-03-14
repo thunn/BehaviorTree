@@ -1,6 +1,6 @@
 [package]
 name = "thunn/behavior-tree"
-version = "5.0.1"
+version = "5.0.2"
 
 authors = ["Defaultio"]
 description = "BehaviorTree is an implementation of the \"behavior tree\" paradigm for managing behavior. "
